@@ -4,7 +4,7 @@ import axios from 'axios';
 
 export const getuser=createAsyncThunk("user/get",async()=>{
     try {
-        let result=await axios.get("https://mern-contact-telg.vercel.app//user/");
+        let result=await axios.get("https://mern-front-2.vercel.app/user/");
         return result;
     } catch (error) {
         console.log(error);
@@ -12,7 +12,7 @@ export const getuser=createAsyncThunk("user/get",async()=>{
 })
 export const adduser=createAsyncThunk("user/add",async(newuser)=>{
   try {
-      let result=await axios.post("https://mern-contact-telg.vercel.app//user/add",newuser);
+      let result=await axios.post("https://mern-front-2.vercel.app/user/add",newuser);
       return result;
   } catch (error) {
       console.log(error);
@@ -21,7 +21,7 @@ export const adduser=createAsyncThunk("user/add",async(newuser)=>{
 
 export const deleteuser=createAsyncThunk("user/delete",async(id)=>{
     try {
-        let result=await axios.delete(`https://mern-contact-telg.vercel.app//user/${id}`);
+        let result=await axios.delete(`https://mern-front-2.vercel.app/user/${id}`);
         return result;
     } catch (error) {
         console.log(error);
@@ -30,7 +30,7 @@ export const deleteuser=createAsyncThunk("user/delete",async(id)=>{
 
   export const edituser=createAsyncThunk("user/edit",async({id,edited})=>{
     try {
-        let result=await axios.put(`https://mern-contact-telg.vercel.app//user/${id}`,edited);
+        let result=await axios.put(`https://mern-front-2.vercel.app/user/${id}`,edited);
         return result;
     } catch (error) {
         console.log(error);
