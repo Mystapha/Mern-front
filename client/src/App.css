@@ -1,0 +1,27 @@
+
+.App{
+    background-image:url("https://takepng.com/files/preview/1280x720/11646575016cbumarv5e9yojidzjcef02ktspvmw87rgrz1vjmha6hul6kgkb5kxubvxld07vjkv8ganp3zh6g8ikojshs4pspxfxiqhp8mwppw.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+.cards{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:50px;
+    place-items:center;
+    margin-top:60px;
+    
+}
+.btn1{
+    text-align: center;
+}
+@media(max-width:528px) {
+    .cards{
+        display:grid;
+        grid-template-columns:1fr;
+        place-items: center;
+        gap:20px;
+        margin-top: 50px;
+    }
+}
